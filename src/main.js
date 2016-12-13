@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import main from './components/Main.vue'
 import App from './App.vue';
+import subview from './components/Subview.vue'
 
 Vue.use(VueRouter)
 // Vue.use(require('vue-resource'));
@@ -24,12 +25,14 @@ Vue.use(VueRouter)
 var router = new VueRouter();
 
 router.map({
-    '/main': {
-        component: main
-    },
-    '/testtwo': {
-        component: { template: '<div>two</div>'}
-    }
+  '/main': {
+    name: 'main',
+    component: main
+  },
+  '/testtwo': {
+    name: 'test',
+    component: subview
+  }
 });
 
 router.start(App, '#app');

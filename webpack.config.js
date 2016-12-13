@@ -1,6 +1,7 @@
 var webpack = require('webpack'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
-  OpenBrowserPlugin = require('open-browser-webpack-plugin');
+  OpenBrowserPlugin = require('open-browser-webpack-plugin'),
+  path = require('path');
 module.exports = {
   //插件项
   plugins: [
@@ -18,7 +19,7 @@ module.exports = {
     }
   }),
   new OpenBrowserPlugin({
-    url: 'http://127.0.0.1:8080/index.html/'
+    url: 'http://127.0.0.1:8080/#!/main'
   })
   ],
   //页面入口文件配置
@@ -38,7 +39,7 @@ module.exports = {
       //.js 文件使用 jsx-loader 来编译处理
       // { test: /\.js$/, loader: 'jsx-loader?harmony' },
       //.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理
-      { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
+      { test: /\.scss$/, loader: 'sass-loader'},
       //图片文件使用 url-loader 来处理，小于8kb的直接转为base64
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       {
