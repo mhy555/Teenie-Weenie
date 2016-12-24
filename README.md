@@ -1,2 +1,2 @@
-# vue-practice
-This is a practice of vue.js
+# Teenie-Weenie
+This is a Teenie Weenie website to my best friend
