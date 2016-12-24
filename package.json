@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serverdev": "webpack-dev-server --progress --colors --inline"
+    "serverdev": "export NODE_ENV=development && webpack-dev-server --progress --colors --inline",
+    "clear": "rm -rf ./dist/*",
+    "build": "npm run clear && webpack"
   },
   "repository": {
     "type": "git",

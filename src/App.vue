@@ -8,7 +8,7 @@
 
 </script>
 
-<style lang="sass" src="./sass/app.scss"></style>
+<style lang="sass" src="./sass/main.scss"></style>
 <style lang="sass">
 
 </style>

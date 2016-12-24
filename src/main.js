@@ -25,7 +25,7 @@ Vue.use(VueRouter)
 var router = new VueRouter();
 
 router.map({
-  '/main': {
+  '/': {
     name: 'main',
     component: main
   },

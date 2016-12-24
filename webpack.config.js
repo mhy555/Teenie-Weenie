@@ -19,7 +19,7 @@ module.exports = {
     }
   }),
   new OpenBrowserPlugin({
-    url: 'http://127.0.0.1:8080/#!/main'
+    url: 'http://127.0.0.1:8080/#!/'
   })
   ],
   //页面入口文件配置
