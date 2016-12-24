@@ -2,7 +2,7 @@
 This is a Teenie Weenie website to my best friend
 
 # run
-npm install
+npm install <br/>
 npm run serverdev
 
 #build
