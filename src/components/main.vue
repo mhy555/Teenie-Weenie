@@ -54,7 +54,11 @@
       var self = this;
       setTimeout(addPicNo, 10000)
       function addPicNo() {
-        self.picNo++;
+        if (self.picNo !== self.picLength - 1) {
+          self.picNo++;
+        } else {
+          self.picNo = 0;
+        }
         setTimeout(addPicNo, 10000)
       }
     },
