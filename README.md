@@ -1,5 +1,5 @@
 # Teenie-Weenie
-This is a Teenie Weenie website to one of my best friend
+This is a Teenie Weenie website to one of my best friends
 
 # run
 npm install <br/>
